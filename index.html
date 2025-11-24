@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pirai Soodan G | Backend Engineer</title>
+    <meta name="description" content="Portfolio of Pirai Soodan G, a Backend Engineer skilled in Java, Spring Boot, and scalable systems.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cursor-blur"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Pirai.dev</div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Backend Engineer & Software Developer">Backend Engineer & Software Developer</h1>
+                <p class="subtitle">I build secure, scalable and high-performance backend systems.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn primary">Download Resume</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-bg-animation">
+                <!-- Canvas or particles will go here -->
+                <canvas id="hero-canvas"></canvas>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="profile-card tilt-card">
+                        <div class="profile-img-placeholder">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </div>
+                    </div>
+                    <div class="bio-text">
+                        <p>Backend Engineer skilled in <span class="highlight">Java, Spring Boot, SQL, and REST APIs</span>. Worked on migrating 8 microservices to Java 17 & Spring Boot 3+, fixed critical vulnerabilities using Snyk, built custom REST endpoints, and developed API health-check systems.</p>
+                        <p>Passionate about scalable backend architecture and continuous learning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Skills will be populated here -->
+                    <div class="skill-category">
+                        <h3>Core</h3>
+                        <div class="skill-bar" data-skill="Java" data-level="90%">
+                            <div class="info"><span>Java</span><span>90%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-skill="Spring Boot" data-level="85%">
+                            <div class="info"><span>Spring Boot</span><span>85%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-skill="Hibernate" data-level="80%">
+                            <div class="info"><span>Hibernate</span><span>80%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                         <div class="skill-bar" data-skill="REST APIs" data-level="90%">
+                            <div class="info"><span>REST APIs</span><span>90%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Data & Scripting</h3>
+                        <div class="skill-bar" data-skill="SQL" data-level="85%">
+                            <div class="info"><span>SQL</span><span>85%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                        <div class="skill-bar" data-skill="Python" data-level="75%">
+                            <div class="info"><span>Python</span><span>75%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                         <div class="skill-bar" data-skill="Microservices" data-level="80%">
+                            <div class="info"><span>Microservices</span><span>80%</span></div>
+                            <div class="bar-bg"><div class="bar-fill"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-tags">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Git</span>
+                            <span class="tag">Postman</span>
+                            <span class="tag">Snyk</span>
+                            <span class="tag">JIRA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Cards -->
+                    <div class="project-card tilt-card">
+                        <div class="card-content">
+                            <h3>Music Recommendation System</h3>
+                            <p class="tech-stack">Machine Learning • Python</p>
+                            <p class="description">A personalized music recommendation engine using collaborative filtering.</p>
+                            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card tilt-card">
+                        <div class="card-content">
+                            <h3>Intrusion Detection System</h3>
+                            <p class="tech-stack">Networks • Security • Python</p>
+                            <p class="description">Network traffic analysis tool to detect anomalies and potential intrusions.</p>
+                            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card tilt-card">
+                        <div class="card-content">
+                            <h3>Smart Parking System</h3>
+                            <p class="tech-stack">IoT • Raspberry Pi • Python</p>
+                            <p class="description">Automated parking slot detection and management system using IoT sensors.</p>
+                            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                     <div class="project-card tilt-card">
+                        <div class="card-content">
+                            <h3>Prediction of Cause of Death</h3>
+                            <p class="tech-stack">Deep Learning • TensorFlow</p>
+                            <p class="description">Predictive model analyzing medical records to determine probable cause of death.</p>
+                            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Jan 2025 – Jul 2025</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineer Intern</h3>
+                            <h4>Purchasing Power Corp · Chennai</h4>
+                            <p>Microservice migration • API development • Security patching • SAP Hybris integrations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder=" "></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pirai Soodan G. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
